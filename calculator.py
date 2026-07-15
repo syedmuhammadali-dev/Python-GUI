@@ -67,21 +67,21 @@ def clear():
 
 # Buttons
 btn_add = tk.Button(window, text="Add (+)", command=add)
-btn_add.grid(row=3, column=0, columnspan=2, pady=3)
+btn_add.grid(row=3, column=0, padx=3, pady=3)
 
 btn_sub = tk.Button(window, text="Subtract (-)", command=subtract)
-btn_sub.grid(row=4, column=0, columnspan=2, pady=3)
+btn_sub.grid(row=3, column=1, padx=3, pady=3)
 
 btn_mul = tk.Button(window, text="Multiply (*)", command=multiply)
-btn_mul.grid(row=5, column=0, columnspan=2, pady=3)
+btn_mul.grid(row=4, column=0, padx=3, pady=3)
 
 btn_div = tk.Button(window, text="Divide (/)", command=divide)
-btn_div.grid(row=6, column=0, columnspan=2, pady=3)
+btn_div.grid(row=4, column=1, padx=3, pady=3)
 
 btn_rem = tk.Button(window, text="Remainder (%)", command=remainder)
-btn_rem.grid(row=7, column=0, columnspan=2, pady=3)
+btn_rem.grid(row=5, column=0, padx=3, pady=3)
 
 btn_clear = tk.Button(window, text="Clear", command=clear)
-btn_clear.grid(row=8, column=0, columnspan=2, pady=3)
+btn_clear.grid(row=5, column=1, padx=3, pady=3)
 
 window.mainloop()
